@@ -1,0 +1,34 @@
+#container {
+    text-align: center;
+
+    h3 {
+        color: red;
+    }
+
+    .contents {
+        text-align: center;
+        width: 300px;
+        border: 2px dotted black;
+        margin: 10px auto;
+    }
+
+    .pseudo {
+        &.before::before{
+            content: "hello ";            
+            color: orangered;
+        }
+        &.after::after{
+            content: " world";            
+            color: orangered;
+        }
+        &.first-letter::first-letter{
+            content: "";            
+            color: orangered;
+        }
+        &.first-line::first-line{
+            content: "";            
+            color: orangered;
+        }
+
+    }
+}
