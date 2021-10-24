@@ -1,0 +1,48 @@
+$backColor: white;
+$frontColor: black;
+
+h1 {
+    background-color: gray;
+    color: white;
+}
+
+h3 {
+    color: red;
+}
+
+#container {
+    text-align: center;
+
+    .btn {
+        position: relative;
+        color: $frontColor;
+        font-weight: 700;
+        background-color: $backColor;
+        border: 1px solid $frontColor;
+        padding: 10px 25px;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: all 0.3s;//hover時に、どの要素をどの速度で変化させるか
+
+        &.colorChange {
+            border-radius: 7px; //枠の丸み
+            &:hover {
+                color: $backColor;
+                background-color: $frontColor;
+                letter-spacing: 2px;//文字の間隔が開く
+            }
+        }
+
+        &.shadow {
+            //box-shadow: none;
+            &:hover {
+                transform: translate(-2.5px, -2.5px);
+                box-shadow: 5px 5px 0 0 gray;
+            }
+        }
+    }
+
+
+
+
+}

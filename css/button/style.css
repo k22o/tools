@@ -1,0 +1,43 @@
+h1 {
+  background-color: gray;
+  color: white;
+}
+
+h3 {
+  color: red;
+}
+
+#container {
+  text-align: center;
+}
+
+#container .btn {
+  position: relative;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 25px;
+  margin: 10px auto;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#container .btn.colorChange {
+  border-radius: 7px;
+}
+
+#container .btn.colorChange:hover {
+  color: white;
+  background-color: black;
+  letter-spacing: 2px;
+}
+
+#container .btn.shadow:hover {
+  -webkit-transform: translate(-2.5px, -2.5px);
+          transform: translate(-2.5px, -2.5px);
+  -webkit-box-shadow: 5px 5px 0 0 gray;
+          box-shadow: 5px 5px 0 0 gray;
+}
+/*# sourceMappingURL=style.css.map */
