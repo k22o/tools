@@ -22,13 +22,21 @@
             background-color:salmon;
         }    
     }
+    .row1-2 {
+        margin: 10px auto;
+        width:50px;
+        height: 50px;
+        background-color:salmon;
+    }    
 
     .row2 {
         width:400px;
         height: 100px;
         margin: 20px auto;
         display: flex;
-        justify-content: center;
+        justify-content: center; //横方向の整列
+        // justify-content: space-between; //均等に
+        align-items: center; //縦方向の整列
         background-color: lightpink;
         .column2 {
             margin: 5% 10%;
@@ -37,6 +45,44 @@
             background-color:salmon;
         }    
     }
+
+    .row2-2 {
+        width:400px;
+        height: 200px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column; // rowだと横並び
+        justify-content: center; //横方向の整列
+        align-items: center; //縦方向の整列
+        background-color: lightpink;
+        .column2-2 {
+            margin: 5% 10%;
+            width: 50px;
+            height: 50px;
+            background-color:salmon;
+        }    
+    }
+
+    .row2-3 {
+        width: 400px;
+        height: 100px;
+        margin: 20px auto;
+        display: flex;
+        background-color: lightpink;
+        .column2-3-1 {
+            flex-grow: 1; //別の子要素と均等に分割
+            background-color:salmon;
+        }    
+        .column2-3-2 {
+            flex-grow: 2;
+            background-color:orange;
+        }    
+        .column2-3-3 {
+            flex-basis: 30px;
+            background-color:burlywood;
+        }    
+    }
+
 
     .row3 {
         width:400px;
