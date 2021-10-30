@@ -13,3 +13,15 @@
 <p>hello world</p>
 ```
 で済む。
+
+
+## 疑似セレクタ
+### 補足 (nth-childとnth-of-type)
+- 違いはこちらを参照
+   - https://techacademy.jp/magazine/25452
+- nth-child:
+   - 子要素を順番に数えて、対象でない場合は反映しない
+   - https://developer.mozilla.org/ja/docs/Web/CSS/:nth-of-type
+- nth-of-type
+   - 対象でない子要素は外して、順番に数える
+   - https://developer.mozilla.org/ja/docs/Web/CSS/:nth-of-type
