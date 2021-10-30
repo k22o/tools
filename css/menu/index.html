@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>menu</title>
+</head>
+<body>
+    <div id="container">
+        <button id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="showWhenMenuOpen">
+            hello
+        </div>
+    </div>
+</body>
+<script>
+
+    const target = document.getElementById("hamburgerMenu");
+    target.addEventListener('click', () => {
+        let body = document.querySelector('body');
+        let contents = document.getElementsByClassName('showWhenMenuOpen');
+        let contentsArray = Array.prototype.slice.call(contents);
+        body.classList.toggle('menuOpen');
+
+        if (body.classList.contains('menuOpen')) {
+            contentsArray.forEach(element => {
+                element.style.display = 'block';
+            })
+        }
+        else {
+            contentsArray.forEach(element => {
+                element.style.display = 'none';
+            })
+        }
+    })
+</script>
+
+</html>

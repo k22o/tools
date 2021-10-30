@@ -1,0 +1,47 @@
+#container {
+    width: 80%;
+    margin: 0 auto;    
+
+    #hamburgerMenu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        & > span {
+            display: block;
+            background-color: black;
+            width: 35px;
+            height: 2px;
+            margin-bottom: 10px;
+            transition: all 0s;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .showWhenMenuOpen {
+        display: none;
+        color:gray;
+    }
+}
+.menuOpen {
+    background-color: black;
+
+    #container {
+        & #hamburgerMenu {
+            & > span {
+                background-color: white;
+                &:nth-child(1) {
+                    transform: translateY(12px) rotate(135deg);
+                }
+                &:nth-child(2) {
+                    transform: translateX(-18px) scale(0);
+                }
+                &:nth-child(3) {
+                    transform: translateY(-12px) rotate(-135deg);
+                }
+            }
+        }
+    }
+}

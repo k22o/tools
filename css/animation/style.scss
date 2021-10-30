@@ -1,4 +1,4 @@
-@import "mixinParts.scss";
+@import "mixinParts";
 
 #container {
     text-align: center;
@@ -11,7 +11,7 @@
             height: 24px;
             background-color: black;
             border-radius: 50%;
-            animation: sk-bounce-delay 1.5s;
+            animation: bounce-delay 1.5s;
             animation-timing-function: ease;
             animation-iteration-count: infinite;
 
@@ -67,6 +67,7 @@
             @include animation($name: rotation-3d);
         }
     }
+
     #sample4 {
         padding:20px;
         div {
@@ -85,9 +86,49 @@
                 }
             }
         }
-    }}
+    }
 
-@keyframes sk-bounce-delay {
+    #sample5 {
+        position: relative;
+        text-align: center;
+        background-color: lightsalmon;
+        width: 60%;
+        height: 100px;
+        margin: 0 auto;
+        
+        .strings {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            color: white;
+
+            &.isShow {
+                opacity: 1;
+
+                & .char {
+                    display: inline-block;
+                    
+                    @include animation (
+                        $name: string-fade-in,
+                        $duration: 0.5s,
+                        $iteration-count: 1,
+                        $fill-mode: both                
+                    );
+
+                    @for $i from 1 to 5 {
+                        &:nth-child(#{$i}) {
+                            animation-delay: $i*0.1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounce-delay {
     0%{
         transform: scale(0);
     }
@@ -131,6 +172,18 @@
     }
     100%{
         transform: scaleY(1);
+    }
+
+}
+
+@keyframes string-fade-in {
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
     }
 
 }
