@@ -1,0 +1,21 @@
+#container {
+  text-align: center;
+  width: 80%;
+}
+
+#container div {
+  margin: 10px auto;
+}
+
+#container #sample1 {
+  height: 200px;
+}
+
+#container #sample2 {
+  height: 200px;
+  background-image: url("image/line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */

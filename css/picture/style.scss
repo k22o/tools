@@ -1,0 +1,20 @@
+#container {
+    text-align: center;
+    width: 80%;
+
+    div {
+        margin: 10px auto;
+    }
+
+    #sample1 {
+        height: 200px;
+    }
+
+    #sample2 {
+        height: 200px;
+        background-image: url("image/line.png");
+        background-repeat: no-repeat;
+        background-size: cover;//アスペクト比を保ったまま、トリミングしてくれる
+        background-position: center;
+    }     
+}

@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+#container .sampleBox {
+  margin: 10px auto;
+  width: 80%;
+  border: 2px dotted black;
+  background-color: whitesmoke;
+}
+
 #container #sample1 div {
   display: inline-block;
   width: 24px;
@@ -177,6 +184,38 @@
 #container #sample5 .strings.isShow .char:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+}
+
+#container #sample6 button {
+  display: block;
+  margin: 5px auto;
+}
+
+#container #sample6 .box {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: lightsalmon;
+}
+
+#container #sample6 .appear .box {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#container #sample6 .appear.isShow .box {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#container #sample6 .appear.isShow .box:nth-child(2) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 @-webkit-keyframes bounce-delay {

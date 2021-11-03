@@ -3,6 +3,13 @@
 #container {
     text-align: center;
 
+    .sampleBox {
+        margin: 10px auto;
+        width: 80%;
+        border: 2px dotted black;
+        background-color: whitesmoke;
+    }
+
     #sample1 {
         // .dot {
         div {   
@@ -121,6 +128,38 @@
                         &:nth-child(#{$i}) {
                             animation-delay: $i*0.1s;
                         }
+                    }
+                }
+            }
+        }
+    }
+    #sample6 {
+        button {
+            display: block;
+            margin: 5px auto;
+        }
+
+        .box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: lightsalmon;
+        }
+
+        .appear {
+            & .box {
+                transition: all 1s;
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            &.isShow {
+                & .box {
+                    opacity: 1;
+                    transform: none;
+
+                    &:nth-child(2) {
+                        transition-delay: 0.5s;
                     }
                 }
             }

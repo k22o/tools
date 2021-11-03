@@ -1,5 +1,8 @@
 # CSS テンプレート集
 
+ソースコードの内容は、以下のサイトを参考にしています。
+- https://www.udemy.com/course/front-dev-tutorial/
+
 ## contents
 - animation:
 - button:
