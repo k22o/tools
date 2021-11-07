@@ -103,7 +103,7 @@
         height: 100px;
         margin: 0 auto;
         
-        .strings {
+        .animateStrings {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -124,9 +124,9 @@
                         $fill-mode: both                
                     );
 
-                    @for $i from 1 to 5 {
+                    @for $i from 1 to 20 {
                         &:nth-child(#{$i}) {
-                            animation-delay: $i*0.1s;
+                            animation-delay: $i*0.05s;
                         }
                     }
                 }

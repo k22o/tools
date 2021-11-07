@@ -16,3 +16,13 @@
     - display:block
     - display:inline
     - display:inline-block
+
+## positionの使い方の注意
+- relative, absolute, fixの基本的な使い方は、htmlの通り
+- 要素を画面外に出したいときはfixを使う
+    - absoluteは、親に対する絶対位置で、fixは画面に対する絶対位置
+    - よって、absoluteで画面外に出そうとすると、画面が広がってしまう
+
+
+
+
