@@ -8,7 +8,9 @@
 - button:
 - layout:
 - menu:
+- picture:
 - pseudo-element-and-selector:
+- scroll:
 
 ## 実装について
 - scssを利用
@@ -23,6 +25,11 @@
 scssでは、特に2,3番目について、この空白の有無を反映して、ネストした先の&を書きます。
 - & p2
 - &p2
+
+## 参考
+### 便利なライブラリ
+- https://codebyzach.github.io/pace/ : ローダーを作れるJSライブラリ
+- https://swiperjs.com/ : スライダーを作れるJSライブラリ
 
 
 
