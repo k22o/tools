@@ -4,13 +4,16 @@
 - https://www.udemy.com/course/front-dev-tutorial/
 
 ## contents
-- animation:
-- button:
-- layout:
-- menu:
-- picture:
-- pseudo-element-and-selector:
-- scroll:
+- animation: keyframeを用いたanimationの作成
+- button: さまざまなバリエーションのボタン
+- layout: 要素の並べ方
+- menu: スマホメニュー (ハンバーガーメニュー)
+- picture: 画像の表示方法
+- pseudo-element-and-selector: 疑似要素の使い方
+- responsive: レスポンシブなページの設計
+- scroll: スクロールとintersection observer
+- swipe: 画像をスワイプで表示
+
 
 ## 実装について
 - scssを利用
