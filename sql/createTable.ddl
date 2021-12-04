@@ -7,7 +7,9 @@ USE sample_db;
 DROP TABLE IF EXISTS members;
 CREATE TABLE IF NOT EXISTS members(
 	id INT primary key auto_increment,
-	name VARCHAR(20) not null
+	name VARCHAR(20) NOT NULL,
+	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 // サンプルデータを作る
