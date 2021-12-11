@@ -1,10 +1,12 @@
 ## fork元からのpull
 ## 手順
 1. remoteリポジトリ”upstream”としてfork元を登録する
-1. pullする
+2. 登録できたか確認する
+3. pullする
 
 ```
 $ git remote add upstream hoge.git
+$ git remote -v
 $ git pull upstream master
 ```
 ## 参考
