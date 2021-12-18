@@ -1,9 +1,8 @@
 ## コンテンツ
-ubuntuとnginxのイメージをダウンロード済みとする。
+適宜、必要なdocker imageをpullしておくこと。
 - python: python3環境の構築
 - web-server: ウェブサーバーの構築
 - mysql: mysqlサーバーの構築
-
 
 
 ## メモ

@@ -9,8 +9,8 @@
 
 ### dockerfileからの実行
 ```
-docker build -t web-sample:1.0 .
-docker container run --name test -p 8081:80 -d web-sample:1.0
+$ docker build -t web-sample:1.0 .
+$ docker container run --name test -p 8081:80 -d web-sample:1.0
 ```
 
 ## アクセス方法
