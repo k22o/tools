@@ -6,6 +6,15 @@ $ ssh-keygen -t rsa  # RSA暗号で鍵を作成する
 $ ls ~/.ssh
 ```
 
+### ssh鍵の設置
+接続先サーバの、`~/.ssh/authorized_keys`に公開鍵を登録
+注) sshサーバーは、openSSLなどを導入しておく
+```
+$ sudo chmod 700 ~/.ssh 
+$ cat  ***/***/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+
+
 ### ssh接続する
 ```
 $ ssh server.com 
