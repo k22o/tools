@@ -1,0 +1,3 @@
+- createTable.ddl: テーブルの作成
+- crateUser.sql: root以外のユーザーの作成
+- data_copy_and_insert.sql: 既存のデータを一部修正した、新しいデータを挿入
