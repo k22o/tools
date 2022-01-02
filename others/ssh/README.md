@@ -1,4 +1,4 @@
-# SSH
+## SSH
 
 ### sshの鍵の作成
 ```
@@ -42,6 +42,9 @@ scp file.txt userName@server.com:~/files
 sftpの場合
 - ファイル名などは対話的に送信
 ```
-scp file.txt userName@server.com:~/files
+sftp userName@server.com/files
 ```
 
+
+## 参考
+- sshキーを複数設定する：https://qiita.com/tmiame/items/e8df003c1d3cc6e2b6b7
