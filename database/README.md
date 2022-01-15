@@ -46,6 +46,14 @@
 - 例：MongoDB
     - JSON形式でデータを保存できる
 
+## NewSQL
+- RDBとNoSQLのいいとこどりをめざす
+    - スケールアウト、分散DB化ができるといった、拡張性や柔軟性
+    - SQLが利用でき、トランザクションをサポート
+- 例：
+    - Google Cloud Spanner
+    - Cochroach DB
+    - TiDB    
 
 ## 参考文献
 - https://products.sint.co.jp/siob/blog/nosql
