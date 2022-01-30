@@ -1,6 +1,7 @@
 # webストレージ
 1. [localStorage](#localStorage)
 1. [sessionStorage](#sessionStorage)
+1. [indexedDB](#indexedDB)
 1. [cookie](#cookie)
 1. [session](#session)
 
@@ -13,6 +14,10 @@
 ## sessionStorage
 - localStorageとほぼ同様
 - こちらは、セッションを跨いでは保持されない
+
+## indexedDB
+- localStorageなどよりも、より高級なkey-valueストレージ (DB) を提供する。
+    - 大量のデータ、トランザクション、インデックス機能など
 
 ## cookie
 
