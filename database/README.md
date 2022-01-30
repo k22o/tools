@@ -1,12 +1,12 @@
 # 目次
 - [Database](#Database)
-    - [SQL(RDB)](##SQL (RDB))
-    - [NoSQL](##NoSQL)
-        - [key-value型](###key-value型) 
-        - [column指向型](###column指向型)
-        - [graph型](###graph型)
-        - [Document型](###graph型)
-    - [NewSQL](##NewSQL)
+    - [SQL(RDB)](#SQL(RDB))
+    - [NoSQL](#NoSQL)
+        - [key-value型](#key-value型) 
+        - [column指向型](#column指向型)
+        - [graph型](#graph型)
+        - [Document型](#graph型)
+    - [NewSQL](#NewSQL)
 - [Migration Tool](#MigrationTool)
 
 
