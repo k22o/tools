@@ -1,18 +1,18 @@
 # 目次
 - [Database](#Database)
-    - [SQL(RDB)](##SQL (RDB))
-    - [NoSQL](##NoSQL)
-        - [key-value型](###key-value型) 
-        - [column指向型](###column指向型)
-        - [graph型](###graph型)
-        - [Document型](###graph型)
-    - [NewSQL](##NewSQL)
+    - [SQL(RDB)](#SQL-RDB)
+    - [NoSQL](#NoSQL)
+        - [key-value型](#key-value型) 
+        - [column指向型](#column指向型)
+        - [graph型](#graph型)
+        - [Document型](#graph型)
+    - [NewSQL](#NewSQL)
 - [Migration Tool](#MigrationTool)
 
 
 
 # Database 
-## SQL (RDB)
+## SQL-RDB
 以下の特徴を持つ
 - データの一貫性とトランザクション機能
 - table結合等による、複雑なデータ操作
