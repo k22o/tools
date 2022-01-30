@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>storage</title>
+</head>
+<body>
+    <div id="container">
+        <p>submitしたら、storageに保存したデータが表示されます</p>
+        <p>deleteでストレージを削除できます。</p>
+        <p>ページのリロードで表示されます。</p>
+
+        <div class="parts" id="localStorage">
+            <h2>LocalStorage</h2>
+            <div class="input">
+                <input type="text" id="localInput"/>
+                <button id="localSubmit">submit</button>
+            </div>
+            <div class="show">
+                <div id="localShow"></div>
+            </div>
+            <div class="delete">
+                <button id="localDelete">delete</button>
+            </div>
+        </div>
+
+        <div class="parts" id="sessionStorage">
+            <h2>SessionStorage</h2>
+            <div class="input">
+                <input type="text" id="sessionInput"/>
+                <button id="sessionSubmit">submit</button>
+            </div>
+            <div class="show">
+                <div id="sessionShow"></div>
+            </div>
+            <div class="delete">
+                <button id="sessionDelete">delete</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="localStorage.js"></script>
+    <script src="sessionStorage.js"></script>
+</body>
+</html>
