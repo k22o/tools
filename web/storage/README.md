@@ -3,7 +3,6 @@
 1. [sessionStorage](#sessionStorage)
 1. [indexedDB](#indexedDB)
 1. [cookie](#cookie)
-1. [session](#session)
 
 ## localStorage
 - webブラウザ上にデータを保存する
@@ -20,6 +19,7 @@
     - 大量のデータ、トランザクション、インデックス機能など
 
 ## cookie
+- 通信時にcookieに変数を入れて送る
+- "id=1;max-age=500;"などのように、変数は`=`で連結されている
+- chromeのdevToolであれば、applicationタブから確認可能
 
-
-## session
