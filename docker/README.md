@@ -1,3 +1,13 @@
+## 目次
+- [コンテンツ](##コンテンツ)
+- [Dockerの基本コマンド](##Dockerの基本コマンド)
+- [サンプルコード](##サンプルコード)
+    - [基礎：起動から消去まで](###基礎：起動から消去まで)
+    - [外部からアクセスされるポートを作る](###外部からアクセスされるポートを作る)
+    - [永続化する](###永続化する)
+- [Dockerfile](##Dockerfile)
+
+
 ## コンテンツ
 適宜、必要なdocker imageをpullしておくこと。
 - python: python3環境の構築
@@ -5,11 +15,8 @@
 - mysql: mysqlサーバーの構築
 
 
-## メモ
-昨今は、docker desktopでできるので、そこまでコマンドいらん。
-
-
 ## Dockerの基本コマンド
+昨今は、docker desktopでできるので、そこまでコマンドいらん。
 
 image関連
 ```
@@ -74,7 +81,7 @@ docker container run --name test -d -p 8080:80 nginx
 docker container run --mount type=bind,src=/home/user/sample,dst=/root -it ubuntu
 ```
 
-## dockerfile
+## Dockerfile
 ### 実行
 dockerfileのあるディレクトリならこれ。docker imageが作成される。
 ```

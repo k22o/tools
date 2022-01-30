@@ -1,5 +1,17 @@
-# Database 
+# 目次
+- [Database](#Database)
+    - [SQL(RDB)](##SQL (RDB))
+    - [NoSQL](##NoSQL)
+        - [key-value型](###key-value型) 
+        - [column指向型](###column指向型)
+        - [graph型](###graph型)
+        - [Document型](###graph型)
+    - [NewSQL](##NewSQL)
+- [Migration Tool](#MigrationTool)
 
+
+
+# Database 
 ## SQL (RDB)
 以下の特徴を持つ
 - データの一貫性とトランザクション機能
@@ -60,7 +72,7 @@
 - https://tracpath.com/works/development/nosql_overview/
 
 
-# Database Migration Tool
+# MigrationTool
 スキーマ定義やテーブル更新のコード化、作業履歴の保存などを行うことができる。<br>
 Ruby on Railsなどではデフォルトで利用できるらしい。
 
