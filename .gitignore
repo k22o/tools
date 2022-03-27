@@ -1,3 +1,6 @@
 # 全般
 .vscode
 node_modules
+
+# linux
+linux/image_process/*.jpeg
