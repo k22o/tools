@@ -1,4 +1,7 @@
-# 出力関係
+### 入出力
+# 0: 標準入力
+# 1: 標準出力
+# 1: 標準 エラー出力
 echo '1+1' | bc > output.txt # ファイルへの標準出力
 echo next_line >> output.txt # 入力の追加
 touch 2> error.txt # 標準エラー出力
@@ -8,7 +11,17 @@ seq 5 | tac # 逆順出力
 rm output.txt
 rm error.txt
 
-# xargsの使い方
+uniq -c < system.sh # 入力
+
+
+### sub shell
+(cd /dev/; ls) # ()内でシェルが完結する。 
+
+### place
+echo {a,b,c}{1..4}
+
+
+### xargsの使い方
 echo dir1 dir2 dir3 | xargs mkdir
 echo dir1 dir2 dir3 | xargs rmdir
 
