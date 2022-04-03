@@ -1,0 +1,19 @@
+[
+    {
+        "name":"takeshi",
+        "items":[
+            "book",
+            "stick",
+            "knife"
+        ],
+        "money":123
+    },
+    {
+        "name":"satoshi",
+        "items":[
+            "book",
+            "cookie"
+        ],
+        "money":20
+    }   
+]
