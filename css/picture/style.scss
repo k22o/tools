@@ -17,4 +17,16 @@
         background-size: cover;//アスペクト比を保ったまま、トリミングしてくれる
         background-position: center;
     }     
+
+    #sample4 {
+        display:inline;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover; //自動トリミング
+    }
+
+    #sample5 {
+        
+    }
 }

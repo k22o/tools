@@ -9,22 +9,37 @@
 </head>
 <body>
     <div id="container">
-        <div id="sample1">
-            <img src="image/one.png" alt="one">
-            <img src="image/two.png" alt="two">
-            <img src="image/three.png" alt="three">
-        </div>        
-
-        <div id="sample2"></div>
-
-        <div id="sample3">
-            <picture>
-                <source media="(min-width:960px)" srcset="image/one.png" />
-                <source media="(min-width:720px)" srcset="image/two.png" />
-                <img src="image/three.png" alt="sample3" />
-            </picture>
-        </div>        
-
+        <div>
+            <h3>画像の表示方法１：imgタグ</h3>
+            <div id="sample1">
+                <img src="image/one.png" alt="one">
+                <img src="image/two.png" alt="two">
+                <img src="image/three.png" alt="three">
+            </div>        
+        </div>
+        <div>
+            <h3>画像の表示方法２；背景設定</h3>
+            <div id="sample2">
+            </div>                
+        </div>
+        <div>
+            <h3>画像の表示方法3: pictureタグ</h3>
+            <div id="sample3">
+                <picture>
+                    <source media="(min-width:960px)" srcset="image/one.png" />
+                    <source media="(min-width:720px)" srcset="image/two.png" />
+                    <img src="image/three.png" alt="sample3" />
+                </picture>
+            </div>        
+        </div>
+        <div>
+            <h3>画像のサイズの自動設定 (小さいものに合わせてトリミング) </h3>
+            <div id="sample4">
+                <img src="image/one.png" alt="one">
+                <img src="image/two.png" alt="two">
+                <img src="image/three.png" alt="three">
+            </div>
+        </div>
     </div>
 </body>
 </html>

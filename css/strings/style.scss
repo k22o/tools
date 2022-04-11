@@ -1,0 +1,57 @@
+h3 {
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+#container {
+    text-align: center;
+
+    .allSelector {
+        user-select: all;
+        background-color: greenyellow;
+        margin: 10px, 20%;
+    }
+
+    .column {
+        p {
+            columns: 3;
+            column-rule: solid 2px #222;            
+        }
+    }
+
+    .deco {
+        #deco1 {
+            text-decoration: underline  #0bd;            
+        }
+        #deco2 {
+            text-decoration: underline wavy #0bd;            
+        }
+        #deco3 {
+            text-decoration: dashed line-through #0bd;            
+        }
+    }
+
+    .emp {
+        #emp1 {
+            -webkit-text-emphasis: dot red;
+            text-emphasis: dot red;
+        }
+        #emp2 {
+            -webkit-text-emphasis: circle red;
+            text-emphasis: circle red;
+        }
+        #emp3 {
+            -webkit-text-emphasis: sesame red;
+            text-emphasis: sesame red;
+        }
+    }
+
+    #sample4 {
+        details {
+            transition: .5s;
+        }
+        details[open] {
+            background: lightsalmon;
+        }        
+    }
+}
