@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  background-color: darkred;
+  color: whitesmoke;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#container header {
+  height: 100vh;
+}
+
+#container #sectionA {
+  height: 100vh;
+}
+
+#container #sectionB {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

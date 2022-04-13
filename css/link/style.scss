@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth; //スクロールの仕方に設定
+}
+
+h3 {
+    background-color: darkred;
+    color: whitesmoke;
+    position: sticky;// 指定したものがスクロールに追従する
+    top: 0; //上から0の位置に固定
+}
+
+#container {
+
+    header {
+        height: 100vh
+    }
+
+    #sectionA {
+        height: 100vh
+    }
+
+    #sectionB {
+        height: 100vh
+    }
+
+
+}

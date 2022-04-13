@@ -1,14 +1,14 @@
 #container {
   text-align: center;
   width: 80%;
-  height: 8000px;
+  height: 3000px;
 }
 
 #container .sample {
   margin: 0 auto;
-  background-color: lightslategray;
+  outline: auto;
   width: 80%;
-  height: 2000px;
+  height: 1000px;
 }
 
 #container #colorBlock {
