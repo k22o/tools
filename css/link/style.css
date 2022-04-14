@@ -10,6 +10,10 @@ h3 {
   top: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 #container header {
   height: 100vh;
 }
