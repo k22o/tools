@@ -15,6 +15,7 @@ seq 5 | tac # 出力を逆順にする
 
 # 文字のunique
 (echo 1;echo 1;echo 3;) | uniq
+(echo 100;echo 101;echo 300;) | uniq -w2 #指定した文字数でuniqか調べる
 (echo c;echo a;echo a;) | uniq -c | sort -k2 | awk '{print $2 ":"  $1 "こ"}' # 数えて、2列目でソート
 
 # 文字を変換
@@ -34,3 +35,6 @@ wc -l < sample.txt # ファイルの行数を数える
 # 行ごとに文字を並べる
 paste <(seq 10) <(seq 10 | tac) # 2つの引数の値をそれぞれ並べる
 seq 10 | paste -sd ',' # -sで引数を横にする -d でつなぎ方を決める
+
+# 文字幅を揃える
+ls | column -c 50 # cで1行の幅を設定して、それにあうように並べる

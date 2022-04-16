@@ -8,7 +8,6 @@
 
 filename | contents
 --- | ---
-css | cssのパーツのテンプレート
 database | dataaseのテンプレート
 docker | dockerの使い方説明とテンプレート
 file_converter | fileをサクッと変換するときに
