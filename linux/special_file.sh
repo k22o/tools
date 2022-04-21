@@ -25,6 +25,7 @@ echo a > /dev/stderr # 標準エラー出力。 /dev/fd/2に同じ
 # dev/null: データを読み込んでも出さない (=読み込んだデータをすぐ捨てる)
 seq 5 > /dev/null
 
+
 # 乱数生成 
 echo $RANDOM #16bitの乱数を生成
 echo head -c 8 /dev/random # 8文字の乱数を読み出す

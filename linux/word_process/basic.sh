@@ -21,6 +21,7 @@ seq 5 | tac # 出力を逆順にする
 # 文字を変換
 echo ABCdefGHI | sed -r 's/(ABC)[^G]+/\1\U\2/' # 小->大
 echo ABCdefGHI | sed -r 's/.+/\L\0/' # 小->大
+echo ABCdefGHI | tr d-f D-F # 小->大
 
 # 差分を取る (入力はファイル)
 diff <(echo 'abcde') <(echo 'abcdf')

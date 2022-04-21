@@ -4,3 +4,4 @@ node_modules
 
 # linux
 linux/image_process/*.jpeg
+linux/char_code/dumpbox/*.png*
