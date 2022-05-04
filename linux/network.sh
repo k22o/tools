@@ -3,6 +3,8 @@
 ip addr show # ip addressの調査
 ip -l # ネットワークデバイスの一覧表示
 ip route show #表示　ルーティングテーブルのエントリ情報
+nslookup google.com # FQDN -> IPの処理、DNSの処理作動の確認
+
 
 ### ping: インターネット層のチェック"
 ping -c 5 google.com # 5回チェック
