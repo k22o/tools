@@ -18,6 +18,19 @@ linux | linuxのコマンド集
 security | securityまわり
 others | その他、こまごましたもの
 
+# 利用ソフトウェア
+- vscode
+- intelliJ
+- ubuntu
+- [mod header](https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=ja)
+- [editThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=ja)
+- [gas mask](https://github.com/2ndalpha/gasmask)(mac専用)
+- mySQL
+- [mySQL WorkBench] (https://www.mysql.com/jp/products/workbench/)
+- [CyberDuck] (https://cyberduck.softonic.jp/)
+-
+
+
 
 
 # 実行環境
