@@ -1,6 +1,7 @@
 import java.lang.Integer;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -40,8 +41,16 @@ public class StreamSample {
             .sum();
         System.out.println(result3);
 
+        System.out.println("-----------------");
 
-        
+        // 中間操作：filter
+        // 終端操作：findFirst-条件を満たすうち配列の最初に見つかったもの
+        List<String> list4 = Arrays.asList("aa", "bb" , "ab");
+        Optional<String> result4 = list4.stream()
+            .filter(s -> s.contains("a"))
+            .findFirst();
+            System.out.println(result4.get());
+
     }
 
 }
