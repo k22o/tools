@@ -51,8 +51,8 @@ CORS (オリジン間リソース共有、 Cross-Origin Resource Sharing) 。
 同一元セキュリティポリシーでは、デフォルトでオリジン間のアクセスを禁止しており、これを許可するには実装が必要。
 
 例えば、fe.example.comで動くjsから、api.example.comに直接リクエストを送りたい場合などに問題が発生する。
-
-`Access-Control-Allow-Origin` などのヘッダーをjsからのリクエスト時に付与することで解決される。
+対処方法として、api.example.comが返すレスポンスヘッダーに、
+`access-control-allow-origin: fe.example.com` を追加する。具体的なドメイン名だけでなく、`*(ワイルドカード)`も使える。
 
 
 
