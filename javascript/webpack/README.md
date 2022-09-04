@@ -3,6 +3,12 @@
 - loaderを導入することで、cssや画像ファイルなどの変換も行うことができる
 
 ## インストール
+通常通り、下記を実行
+```
+npm install
+```
+
+(備考)
 ```
 $ npm init
 $ npm install --dev webpack webpack-cli webpack-dev-server

@@ -1,8 +1,4 @@
 # header
-以下の種類がある。
-- request header
-- response header
-- representation header (entity header)
 
 ## リクエストヘッダー
 リクエスト時のヘッダー。
@@ -15,9 +11,12 @@ https://developer.mozilla.org/ja/docs/Glossary/Request_header
 | Referer | どのぺーじからやってきたか |
 | Cookie | cookie |
 
-### Accept系
+## コンテンツネゴシエーションヘッダー
+同じURIでさまざまな表現のリソースを提供するための仕組み
+
 - Accept : クライアントが処理できるコンテンツタイプを MIME タイプで伝える
 - Accept-language：どの言語を処理できるか伝える
+- Accept-encoding : リクエストを圧縮する形式を指定する。gzip, compress, identityなど。指定した中から選んでレスポンスが返る
 - If-*：リクエストを条件付きにする
 
 ## 表現 (representation) ヘッダー / entityヘッダー
@@ -44,6 +43,30 @@ MIMEタイプ (メディアタイプ) で表現される。
 | text/csv | csv |
 | application/json | jsonファイル |
 | application/xml | xmlファイル |
+
+## cache関連
+ブラウザでのキャッシュに関する設定。リクエストもレスポンスもある。
+
+### cache-control
+`Cache-Control: max-age=1000, private`
+- max-age: 秒数を指定
+- public: ブラウザでもプロキシサーバーでも許可
+- private: ブラウザのみで許可 
+- no-cache: キャッシュ不可
+
+### 他
+- expires: レスポンスが古くなる日時。今は普通はCache-Control
+
+## 通信情報のヘッダー
+これらは、セキュリティ的には見えないように消したほうがよいかも。
+- Via : フォワード/リバースプロキシによって追加される。メッセージの途中経路の情報を表す
+- Server : レスポンスヘッダーに含まれ、オリジンサーバーの情報
+
+## セキュリティ
+- X-Content-Type-Options: MIME タイプのスニッフィングを抑止。例: `X-Content-Type-Options: nosniff`
+- X-Frame-Options: iframeなどの内部に表示するか 例: `X-Frame-Options: DENY` `X-Frame-Options: SAMEORIGIN`
+- X-XSS-Protection: XSSを検出した際の動作を規定する 例: `X-XSS-Protection: 1; mode=block`
+- Strict-Transport-Security: HTTPでなくHTTPSを用いて通信するよう指示する。HTTP ~ でHSTSと略される。
 
 ## CORS
 CORS (オリジン間リソース共有、 Cross-Origin Resource Sharing) 。
