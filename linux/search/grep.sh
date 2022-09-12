@@ -4,8 +4,7 @@ echo 'abcdefg!!' | grep -E '!{2}' # ERE (extented RE)
 echo '(test1|test2)' | grep -P '^(test1|test2)' # ERE (Perl RE)
 
 # grepのoption
-echo 123 456 789 | grep -oE '[7-9]+' # o:マッチする部分を改行して表示
-grep '[1-10]' -R # ディレクトリ内のファイル全てをを再帰的に走査
+echo 123 456 789 | grep -oE '[7-9]+' # o:マッチする部分のみを表示
 echo abcde | grep -x 'abc' # 行が完全一致した場合のみ表示
 
 # regex
@@ -17,3 +16,7 @@ grep -E 's(a|i)t' sample.txt
 grep -P '\d+' sample.txt
 grep -P '12(?=3)' sample.txt # 肯定の先読み
 grep -P '12(?!3)' sample.txt # 否定の先読み
+
+# 複数ファイルの検索、再帰的な走査
+grep -r "における"  ../../../ # ファイルとその中の文言の抽出
+grep -rl "における"  ../../../ # パターンを含むファイル名のみ表示
