@@ -25,3 +25,7 @@ pstree # process tree
 ### シグナル
 kill <PID> # 削除　kill -s 9 <PID>と同じ
 kill -l # シグナル一覧
+
+### コマンド履歴
+history 10 # 直近n件のコマンドを返す
+history -d <番号> # 指定した番号の履歴を消す 
