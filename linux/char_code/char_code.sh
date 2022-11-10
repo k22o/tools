@@ -20,17 +20,6 @@ echo -e '\U9A5F' # Unicode \U + 16進数
 echo -e '\xE5\xAA\x9B' # utf-8 \x + 16進数
 cat sample.txt | iconv -f shift_jis -t utf-8 # from:shift_jis to:UTF-8 
 
-# バイナリ
-echo "あいうえお" | xxd # 文字 -> 16進数
-echo "あいうえお" | xxd | tr a-f A-F # 文字 -> 16進数 (a-fを大文字に)
-echo "e38182e38184e38186e38188e3818a0a" | tr a-f A-F | xxd -p -r # 16進数 -> 文字
-echo "あいうえお" | xxd -p | tr a-f A-F | sed 's/^/obase=2;ibase=16;/' | bc # 文字 -> 2進数
-echo "11100011100000011000001000001010" | sed 's/^/obase=16;ibase=2;/' | bc | xxd -r -p # 2進数 -> 文字
-
-echo "あいうえお" | xxd -p | sed -r 's/.{8}/& /g' # 全表示 8桁ごと
-echo "あいうえお" | od # 8進数に変換
-echo "あいうえお" | od -xt1 -An # 16進数に変換 # 1バイトずつ表示
-
 # ハッシュ値の計算
 md5sum ./sample.txt
 sha256sum ./sample.txt
