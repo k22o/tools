@@ -23,3 +23,6 @@ echo "abcde" | xxd -e -g2 # リトルエンディアン
 ### hexdump 2byte単位の16新数表記のリトルエンディアンがデフォ
 echo "abcde" | hexdump
 echo "abcde" | hexdump -C # ビッグエンディアン
+
+### strings ACIIの可読部を読み出す
+strings dummy_binary.out
