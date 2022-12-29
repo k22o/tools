@@ -81,6 +81,9 @@ Ruby on Railsなどではデフォルトで利用できるらしい。
 - flyway
 
 
-
 ## 参考文献
 - https://qiita.com/cocoa-maemae/items/d55c7b53f95425efdce8
+
+
+## 備考
+sample-database: https://dev.mysql.com/doc/index-other.html : sakila
