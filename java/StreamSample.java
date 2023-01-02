@@ -51,6 +51,15 @@ public class StreamSample {
             .findFirst();
             System.out.println(result4.get());
 
+
+        System.out.println("-----------------");
+
+        // 終端操作：any-matchどれか一致するならtrue
+        List<String> list5 = Arrays.asList("aa", "bb" , "cc");
+        boolean result5 = list5.stream()
+            .anyMatch(s -> s.contains("d"));
+        System.out.println(result5);
+
     }
 
 }
