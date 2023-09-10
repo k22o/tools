@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sample.xsd">
+
+    <reportVersion>1</reportVersion>
+
+    <reportOrganization>
+        <!-- 組織情報 -->
+        <organizationName>ABC Corporation</organizationName>
+        <organizationAddress>123 Main Street</organizationAddress>
+        <manager>J.Doe J.Smith</manager>
+    </reportOrganization>
+
+    <personalInfo>
+        <!-- 個人情報1 -->
+        <name>Alice Johnson</name>
+        <birth>1990-05-15</birth>
+    </personalInfo>
+
+    <personalInfo>
+        <!-- 個人情報2 -->
+        <name>Bob Smith</name>
+        <birth>1985-08-20</birth>
+    </personalInfo>
+</root>

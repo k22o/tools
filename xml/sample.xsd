@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- ルートの定義 -->
+    <xsd:element name="root" type="rootType"/>
+
+    <!-- ルートの中身 -->
+    <xsd:complexType name="rootType">
+        <xsd:sequence>
+            <!-- int型 defaultで初期値指定 -->
+            <xsd:element name="reportVersion" type="xsd:int" default="1"/>
+
+            <!-- 独自型 -->
+            <xsd:element name="reportOrganization" type="reportOrganization"/>
+            
+            <!-- 複数繰り返される要素の指定 -->
+            <xsd:element name="personalInfo" type="personalInfoType" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- 独自型の説明 -->
+    <xsd:complexType name="reportOrganization">
+        <!-- sequenceを設定することで、必ずこの順番でデータがあることを規定する -->
+        <xsd:sequence>
+            <xsd:element name="organizationName" type="xsd:string"/>
+            <xsd:element name="organizationAddress" type="xsd:string"/>
+            <!-- 配列の作り方 -->
+            <xsd:element name="manager">
+                <xsd:simpleType>
+                    <xsd:list itemType="xsd:string"/>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="personalInfoType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="birth" type="xsd:date"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
