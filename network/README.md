@@ -1,13 +1,23 @@
 # TCP/IPにおけるプロトコル
 
-## L1:ネットワークインターフェース層のプロトコル
+## L1:ネットワークインターフェース層のプロトコル/規格
 
 OSI参照モデルでいうところの、L1:物理層やL2:データリンク層に該当
 
 - **Ethernet**
   - LAN（Local Area Network）で最も広く使われている有線ネットワーク技術で、コンピューターやネットワーク機器間でデータを送受信するためのプロトコル
+  - かつてはCSMA/CD方式
+  - 同軸上でつなぐ方式からスイッチになったことで、Collision対策が不要になり、CMSA/CDも不要に
 - **Wi-Fi** (IEEE 802.11)
-  無線LANで使用されるプロトコルで、ワイヤレスネットワーク上でのデータ通信を規定  
+  - 無線LANで使用されるプロトコルで、ワイヤレスネットワーク上でのデータ通信を規定。
+  - CMSA/CD方式
+    - セキュリティ -> WPA2, WPA3
+- BlueTooth
+- ZigBee
+  - 家電等への組み込み前提、低消費電力で短距離の無線通信
+- LPWA
+  - IoTなど、低消費電力・長距離の通信
+
 - **PPP (Point-to-Point Protocol)**
   - ポイントツーポイント接続で使用されるプロトコルで、シリアル通信やダイヤルアップ接続で利用
     - シリアル通信: 伝送路を1本、または2本使用して、データを1ビットずつ連続的に送受信する通信方式
@@ -26,12 +36,16 @@ OSI参照モデルでいうところの、L3:ネットワーク層に相当
   - IPアドレスからネットワーク上のMACアドレスを求める
 - RARP (Reverse Address Resolution Protocol)
   - 物理的なMACアドレスからIPアドレスへの逆引きを行う。使用されることは稀。
-
+- NAT (Network Address Translator)
+  - private IPとglobal IPの変換
+- NAPT
+  - NAT + Portも付け替えられる
 
 ## L4:アプリケーション層のプロトコル
 
 OSI参照モデルでいうところの、L5:セッション層、L6:プレゼンテーション層、L7:アプリケーション層に該当。
 
+- WWW
 - HTTP (Hypertext Transfer Protocol)
 - HTTPS (Hypertext Transfer Protocol Secure)
 - SSH (Secure Shell)
