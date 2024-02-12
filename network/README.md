@@ -50,6 +50,7 @@ OSI参照モデルでいうところの、L5:セッション層、L6:プレゼ�
 - HTTPS (Hypertext Transfer Protocol Secure)
 - SSH (Secure Shell)
 - FTP (File Transfer Protocol)
+  - ファイル転送用と制御用で、20,21番ポートを使う
 - DHCP (Dynamic Host Configuration Protocol)
   - ネットワーク上のデバイスにIPアドレスやネットワーク設定情報を自動的に割り当てる
 - DNS (Domain Name System)
