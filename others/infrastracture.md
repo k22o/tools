@@ -34,3 +34,12 @@
 - L4/L7スイッチ：いわゆるロードバランサ付きのL3スイッチ。
   - L4 -> TCP/UDPポートを見て送り先を選択
   - L7 -> URLを見て送り先を選択
+
+## 構成
+
+- **DAS (Direct Attached Storage)**
+  - ストレージをPCに直接接続
+- **NAS (Network Attached Storage)**
+  - ネットワーク上にストレージを配置
+- **SAN (Storage Area Network)**
+  - LANから独立した、ストレージ専用のネットワークを構築し、ストレージを配置
