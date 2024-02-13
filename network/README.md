@@ -34,8 +34,11 @@ OSI参照モデルでいうところの、L3:ネットワーク層に相当
   - IPネットワークでのエラーメッセージや制御メッセージを送受信するためのプロトコル。pingの利用時など
 - ARP（Address Resolution Protocol）
   - IPアドレスからネットワーク上のMACアドレスを求める
+  - IPv6では利用されない
 - RARP (Reverse Address Resolution Protocol)
   - 物理的なMACアドレスからIPアドレスへの逆引きを行う。使用されることは稀。
+- ICMPv6
+  - IPv6で使われるプロトコルで、ICMP とARPを併せ持つ
 - NAT (Network Address Translator)
   - private IPとglobal IPの変換
 - NAPT
