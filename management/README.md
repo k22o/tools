@@ -1,8 +1,24 @@
 # マネジメント
 
+## 企業戦略
+
+[別ファイル参照](./strategy.md)
+
+## KGI・KSF・KPI
+
+- **KGI (Key Goal Indicator)**
+  - 主要な目標や目的を達成するための指標で、長期的ビジョンや戦略的目標に関連する
+- **KSF (Key Success Factor)** / **CSF (Critical SF)**
+  - 目標を達成するに当たって経営戦略上、重要となる管理項目。
+  - CSFに資源を投入することで、KGIの達成につながる
+  - いわば、目標達成のためのアクション
+- **KPI (Key Performance Indicator)**
+  - ビジネスの成功を評価するための具体的で測定可能な指標
+  - KGIを達成するための中間的な指標、マイルストーン
+
 ## サービスレベル
 
-[別ファイル参照](../service-level.md)
+[別ファイル参照](./service-level.md)
 
 ## BCP (Business Continuity Plan)
 

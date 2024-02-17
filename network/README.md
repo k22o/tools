@@ -68,5 +68,8 @@ OSI参照モデルでいうところの、L5:セッション層、L6:プレゼ�
   - メールサーバからのメールのDL
 - SMTP (Simple Mail Transfer Protocol)
   - インターネット上でE-mailを送受信
+- SMTP-AUTH  
+  - SMTPサーバーがSMTPクライアントを認証できるようにしたもの
+  - 587ポート
 - IMAP (Internet Message Access Protocol)
   - 電子メールの受信とメールボックスの管理に使用されるプロトコルで、サーバー上のメールボックスにアクセスする
