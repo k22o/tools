@@ -31,4 +31,4 @@
 - **MTRS (Mean Time to Restore Serivce, 平均サービス復旧時間)**
   - 故障してからシステムが復旧しサービスが使えるようになるまでの時間
 - **MTBSI (Mean Time Between Sytem Incident, 平均システムインシデント間隔)**
-  - 一度故障してから次に故障するまでの時間。MTTR + MTRS
+  - 一度故障してから次に故障するまでの時間。MTBF + MTRS
