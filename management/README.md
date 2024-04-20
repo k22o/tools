@@ -5,7 +5,7 @@
 - [企業戦略](./strategy.md)
 - [サービスレベル](./service-level.md)
 - [財務](./finance.md)
-- [プロジェクトマネジメント](./pj.md)
+- [プロジェクトマネジメント](./pm.md)
 - [組織論](./organization.md)
 
 ## KGI・KSF・KPI
