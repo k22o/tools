@@ -1,0 +1,85 @@
+# React UIコンポーネント作成例
+
+## 詳細プロンプト例
+
+### Buttonコンポーネント例
+
+```
+以下の要件でReactコンポーネントを作成してください：
+
+**コンポーネント**: Button
+**機能**: 
+- クリック可能なボタンコンポーネント
+- 複数のバリアント（primary, secondary, danger）
+- サイズバリエーション（small, medium, large）
+- ローディング状態の表示
+- 無効化状態のサポート
+
+**props**:
+- variant: 'primary' | 'secondary' | 'danger'
+- size: 'small' | 'medium' | 'large'
+- loading?: boolean
+- disabled?: boolean
+- children: React.ReactNode
+- onClick?: () => void
+
+**スタイリング**: CSS Modules または styled-components
+**アクセシビリティ**: ARIA属性の適切な設定
+
+TypeScript、React Hooks、モダンなReactパターンを使用してください。
+```
+
+### Inputコンポーネント例
+
+```
+以下の要件でReactコンポーネントを作成してください：
+
+**コンポーネント**: Input
+**機能**: 
+- テキスト入力フィールド
+- ラベルとプレースホルダーのサポート
+- バリデーションエラー表示
+- 必須フィールドの表示
+- パスワード表示/非表示切り替え
+
+**props**:
+- label?: string
+- placeholder?: string
+- value: string
+- onChange: (value: string) => void
+- error?: string
+- required?: boolean
+- type?: 'text' | 'password' | 'email' | 'number'
+- disabled?: boolean
+
+**スタイリング**: CSS Modules
+**アクセシビリティ**: ラベルとフィールドの関連付け、エラー状態のARIA属性
+
+TypeScript、React Hooksを使用してください。
+```
+
+### Modalコンポーネント例
+
+```
+以下の要件でReactコンポーネントを作成してください：
+
+**コンポーネント**: Modal
+**機能**: 
+- モーダルダイアログ
+- オーバーレイクリックで閉じる
+- ESCキーで閉じる
+- フォーカストラップ
+- アニメーション効果
+
+**props**:
+- isOpen: boolean
+- onClose: () => void
+- title?: string
+- children: React.ReactNode
+- size?: 'small' | 'medium' | 'large'
+
+**スタイリング**: CSS Modules + CSSアニメーション
+**アクセシビリティ**: フォーカストラップ、ARIA属性、キーボードナビゲーション
+
+TypeScript、React Hooks、useEffect、useRefを使用してください。
+```
