@@ -20,6 +20,10 @@ query {
             title
             items(first: 100) {
                 totalCount
+                pageInfo {
+                    endCursor
+                    hasNextPage
+                }
                 nodes {
                     id
                     fieldValues(first: 100) {
