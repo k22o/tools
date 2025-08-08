@@ -103,8 +103,6 @@ Ruby on Railsなどではデフォルトで利用できるらしい。例は以�
 
 [Database Management System](./dbms.md)
 
-
-
 ## 備考
 
 sample-database: https://dev.mysql.com/doc/index-other.html : sakila
