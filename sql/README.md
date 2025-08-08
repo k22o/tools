@@ -1,55 +1,5 @@
 # Database
 
-## DBの種類
-
-- SQL-RDB
-  - データの一貫性とトランザクション機能を有する
-  - table結合等による、複雑なデータ操作ができる
-  - e.g. mySQL, Oracle Database
-- NoSQL
-  - 通常のSQL (RDB) 以外の総称
-  - 高速大容量処理
-  - 画像やJSONの処理に優れる
-  - リレーションを持たない
-  - スケールアウトが容易
-  - SQLに劣るデータ一貫性
-- NewSQL
-  - RDBとNoSQLのいいとこどりをめざす
-    - スケールアウト、分散DB化ができるといった、拡張性や柔軟性
-    - SQLが利用でき、トランザクションをサポート
-  - 例：
-    - Google Cloud Spanner
-    - Cochroach DB
-    - TiDB
-
-## NoSQLの分類
-
-- **key-value型**
-  - keyとvalueの1対1管理による高速処理
-  - 結合処理はできず、複雑な検索は不向き
-  - 例：Redis
-    - インメモリデータストア
-    - 高速処理が可能で数百万件/秒の処理が可能
-    - キャッシュ・チャットメッセージなどの用途
-- **column指向型**
-- 1つのkeyに、複数のcolumnが対応する 
-- RDBは行 (1データ) 単位が得意だが、column指向型は列単位の処理が得意
-- 例：Cassandra
-- **graph型**
-  - node, property, edgeから成り、ネットワーク状データの保存に適する
-  - 例；Neo4j
-- **Document型**
-  - JSONやXMLでデータを保存する
-  - 例：MongoDB
-    - JSON形式でデータを保存できる
-
-## MigrationTool
-スキーマ定義やテーブル更新のコード化、作業履歴の保存などを行うことができる。  
-Ruby on Railsなどではデフォルトで利用できるらしい。例は以下の通り。
-
-- sql-migrate
-- flyway
-
 ## sqlの設計
 
 ### DBの3層スキーマ
@@ -80,7 +30,6 @@ Ruby on Railsなどではデフォルトで利用できるらしい。例は以�
 - [正規化](./normalization.md)
 - [演算](./calculation.md)
 
-
 ## SQLの仕組み
 
 - view
@@ -102,6 +51,31 @@ Ruby on Railsなどではデフォルトで利用できるらしい。例は以�
 ## DBMS
 
 [Database Management System](./dbms.md)
+
+## DBの種類
+
+- SQL-RDB
+  - データの一貫性とトランザクション機能を有する
+  - table結合等による、複雑なデータ操作ができる
+  - e.g. mySQL, Oracle Database
+- NoSQL (Not Only SQL )
+  - 通常のSQL (RDB) 以外の総称
+  - [nosql](./nosql.md)
+- NewSQL
+  - RDBとNoSQLのいいとこどりをめざす
+    - スケールアウト、分散DB化ができるといった、拡張性や柔軟性
+    - SQLが利用でき、トランザクションをサポート
+  - 例：
+    - Google Cloud Spanner
+    - Cochroach DB
+    - TiDB
+
+## MigrationTool
+スキーマ定義やテーブル更新のコード化、作業履歴の保存などを行うことができる。  
+Ruby on Railsなどではデフォルトで利用できるらしい。例は以下の通り。
+
+- sql-migrate
+- flyway
 
 ## 備考
 
