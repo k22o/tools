@@ -11,7 +11,6 @@
 
 filename | contents
 --- | ---
-converter | fileをサクッと変換するときに
 data | データまわり
 docker | dockerの使い方説明とテンプレート
 github-knowhow | githubまわりのノウハウをREADME.mdに記入
@@ -38,12 +37,11 @@ others | その他、こまごましたもの
   - intelliCode
   - Live Server
   - Live Sass Compiler
-  - markdownlint
   - Prettier
   - Path Intellisense
   - vscode-icons
   - WSL
-  - XML 
+  - XML
 - intelliJ
 - ubuntu
 - chrome 拡張
