@@ -29,6 +29,7 @@ CROSS JOIN(
 -- UNION ALL A,B: AとBをすべて結合する(重複は排除しない)
 -- INTERSECT A,B: AかつB
 -- EXCEPT A,B: AかつnotB
+-- intersectやexceptにもallのオプションはある
 
 SELECT 
 c.first_name, c.last_name
