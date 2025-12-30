@@ -25,10 +25,11 @@ CROSS JOIN(
 
 
 
--- UNION A,B: AまたはB
--- UNION ALL A,B: AとBをすべて結合する
+-- UNION A,B: AまたはB(重複は排除される)
+-- UNION ALL A,B: AとBをすべて結合する(重複は排除しない)
 -- INTERSECT A,B: AかつB
--- EXCEPT A,B: Aかつnot B
+-- EXCEPT A,B: AかつnotB
+-- intersectやexceptにもallのオプションはある
 
 SELECT 
 c.first_name, c.last_name

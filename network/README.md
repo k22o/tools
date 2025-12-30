@@ -1,5 +1,13 @@
 # TCP/IPにおけるプロトコル
 
+## 階層
+
+- (4) アプリケーション層
+- (3) トランスポート層
+- (2) インターネット層
+- (1) ネットワークインターフェース層
+
+
 ## ネットワークインターフェース層のプロトコル/規格
 
 [datalink.md](./datalink.md)
@@ -8,13 +16,19 @@
 
 [ip.md](./ip.md)
 
+## トランスポート層のプロトコル
+
+- TCP
+- UDP
+
 ## アプリケーション層のプロトコル
 
 OSI参照モデルでいうところの、L5:セッション層、L6:プレゼンテーション層、L7:アプリケーション層に該当。
 
 - WWW
 - HTTP (Hypertext Transfer Protocol)
-- HTTPS (Hypertext Transfer Protocol Secure)
+- HTTPS (HTTP over SSL/TLS)
+  - 暗号化に、SSLの後継であるTLSを利用するｓ
 - SSH (Secure Shell)
 - FTP (File Transfer Protocol)
   - ファイル転送用と制御用で、20,21番ポートを使う
@@ -33,7 +47,7 @@ OSI参照モデルでいうところの、L5:セッション層、L6:プレゼ�
 - SMTP (Simple Mail Transfer Protocol)
   - インターネット上でE-mailを送受信
 - SMTP-AUTH  
-  - SMTPサーバーがSMTPクライアントを認証できるようにしたもの
+  - SMTPサーバーがSMTPクライアントをIDやPWで認証できるようにしたもの
   - 587ポート
 - IMAP (Internet Message Access Protocol)
   - 電子メールの受信とメールボックスの管理に使用されるプロトコルで、サーバー上のメールボックスにアクセスする
