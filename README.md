@@ -21,7 +21,7 @@ linux | linuxのコマンド集
 management | マネジメント系
 network | ネットワーク
 security | securityまわり
-sql-sample | SQL関係
+database | DB関係
 system-architecture | アーキテクチャなどの考え方
 web | web関連
 xml | XML
