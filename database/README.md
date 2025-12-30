@@ -5,6 +5,7 @@
 - mySQL: mySQLのサンプル
 - [RDB-SQL](./rdb-sql/README.md): RDB-SQLの説明
 - [NoSQL](./nosql.md)
+- Qdrant: Qdrant (ベクトルデータベース) のサンプル
 
 ## Databaseの種類
 
@@ -15,7 +16,9 @@
   - table結合等による、複雑なデータ操作ができる
   - SQLを用いて操作する
 -　NoSQL データベース
-- ベクトルデータベース
+- その他
+  - ベクトルデータベース
+  - 検索エンジン型データベース
 
 ## MigrationTool
 
