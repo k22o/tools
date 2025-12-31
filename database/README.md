@@ -2,10 +2,13 @@
 
 ## 構成
 
-- mySQL: mySQLのサンプル
-- [RDB-SQL](./rdb-sql/README.md): RDB-SQLの説明
-- [NoSQL](./nosql.md)
-- Qdrant: Qdrant (ベクトルデータベース) のサンプル
+- 知識
+  - [RDB-SQL](./rdb-sql/README.md): RDB-SQLの説明
+  - [NoSQL](./nosql.md)
+- サンプル
+  - [mySQL](./mysql/README.md): mySQLのサンプル
+  - [Qdrant](./qdrant/README.md): Qdrant (ベクトルデータベース) のサンプル
+  - [elasticsearch](./elasticsearch/README.md): elasticsearchのサンプル
 
 ## Databaseの種類
 
