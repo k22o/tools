@@ -7,7 +7,7 @@
 以下でimageを作って、docker desktopからrunする。
 
 ```shell
-docker compose up　#buildだったかも、初回だけ
+docker compose up -d
 ```
 
 http://localhost:6333/dashboard でUIを表示できる。

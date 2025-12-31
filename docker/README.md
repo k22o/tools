@@ -93,3 +93,9 @@ docker build -t imageName:tag .
 - RUN: 実行するlinuxコマンド
 - WORKDIR: ワーキングディレクトリの指定
 - CMD: Container 起動時に実行されるコマンド。1つしか実行されない
+
+## docker-compose
+
+― 複数のDockerコンテナで構成されるアプリケーションを定義・管理し、まとめて起動・停止・構築（ビルド）するためのツール
+   - dockerfile (1つのコンテナの設定) と組み合わせることもできる
+- `docker compose up` で起動
