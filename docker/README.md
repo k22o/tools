@@ -98,4 +98,4 @@ docker build -t imageName:tag .
 
 ― 複数のDockerコンテナで構成されるアプリケーションを定義・管理し、まとめて起動・停止・構築（ビルド）するためのツール
    - dockerfile (1つのコンテナの設定) と組み合わせることもできる
-- `docker compose up` で起動
+- `docker compose up` で起動 (イメージがなければ、buildもしてくれる)
