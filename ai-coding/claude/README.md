@@ -1,6 +1,54 @@
 # claude code
 
-(参考) https://github.com/GenerativeAgents/claude-code-book
+- TODO
+    - skillsをいくつか用意する
+    - agentの設定
+    - hookの設定
+    - ghコマンド連携
+
+PC上のclaudeの設定をバックアップする(backup deirectory)。
+再利用する際には、~/.claude にそのままコピーする。
+
+```
+$ cp backup/* ~/.claude/
+```
+
+## 環境構築
+
+### コマンドの設定
+
+```
+$ sudo apt install jq
+```
+
+
+### MCPの設定
+
+```
+$ claude mcp add --transport http context7 https://mcp.context7.com/mcp
+$ claude mcp add chrome-devtools -- npx -y chrome-devtools-mcp@latest
+```
+
+## コマンド
+
+### 起動
+
+```
+claude # 起動
+claude -p {指示} # ヘッドレスで (対話的な画面なしで) 処理する
+claude --continue # 直前のセッションで開く
+claude --resume {sessionID} # 特定のセッションIDで開く
+```
+
+### skillなど
+
+```
+/model モデルの選択など
+/skill skill一覧
+
+```
+
+
 
 ## claude codeの機能
 
@@ -17,13 +65,6 @@
 - `/agent` コマンドでひな形を作ってから加工するとよい
 - sub agentは適宜利用される
 
-### スラッシュコマンド
-
-- `.claude/commands/`配下に、処理内容を記載したmdファイルを配置する
-- mdファイル名がコマンドになる (？)
-- 動的な値も引数的に扱うことができる
-- md内にフロントマターを設定することで、メタデータとして管理できる
-
 ### スキル
 
 - `.claude/skills/`配下に、ディレクトリを切って、それぞれ、`SKILL.md`を設定する
@@ -39,23 +80,8 @@
 
 - ライフライクルの一定のタイミングで必ず実行されるルールを定める
 
+## 参考文献
 
-## コマンド
+(参考) https://github.com/GenerativeAgents/claude-code-book
 
-### 起動
-
-```
-claude # 起動
-claude -p {指示} # ヘッドレスで (対話的な画面なしで) 処理する
-claude --continue # 直前のセッションで開く
-claude --resume {sessionID} # 特定のセッションIDで開く
-```
-
-### MCP
-
-以下のコマンドで設定。`.mcp.json` に保存される
-
-```
-claude mcp add playwright -s project -- npx -y @playwright/mcp@latest
-```
 
