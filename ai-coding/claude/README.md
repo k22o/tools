@@ -1,9 +1,7 @@
 # claude code
 
 - TODO
-    - skillsをいくつか用意する
     - agentの設定
-    - hookの設定
     - ghコマンド連携
 
 PC上のclaudeの設定をバックアップする(backup deirectory)。
@@ -20,7 +18,6 @@ $ cp backup/* ~/.claude/
 ```
 $ sudo apt install jq
 ```
-
 
 ### MCPの設定
 
