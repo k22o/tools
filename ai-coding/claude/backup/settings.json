@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh ~/.claude/hooks/protect-files.sh"
+            "command": "bash ~/.claude/hooks/protect-files.sh"
           }
         ]
       }
