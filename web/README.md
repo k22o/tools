@@ -6,6 +6,7 @@
   - [webでのイベント発生順序](#webでのイベント発生順序)
 - [storage](./storage/): 別ファイル
 - [header](header.md): 別ファイル
+- [通信方法](./communication.md): 別ファイル
 
 ## WebGL
 
