@@ -1,3 +1,14 @@
+# github関連
+
+## ghコマンド
+
+インストールの後、、、
+
+```
+gh auth login
+```
+
+
 ## fork元からのpull
 ### 手順
 1. remoteリポジトリ”upstream”としてfork元を登録する
@@ -9,9 +20,6 @@ $ git remote add upstream hoge.git
 $ git remote -v
 $ git pull upstream master
 ```
-### 参考
-- https://leico.github.io/TechnicalNote/Git/pull-fork-origin
-
 
 ## マージの種類
 - https://qiita.com/ko-he-8/items/94e872f2154829c868df
