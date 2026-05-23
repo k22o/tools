@@ -1,0 +1,15 @@
+MSG=$(cat "$1")
+
+check_message_format() {
+  # コミットメッセージの冒頭が「絵文字」または「:shortcode:」で始まっているかチェック
+  # - 絵文字: Unicode の Extended_Pictographic、または地域指示子2文字（国旗）
+  # - ショートコード: :英数字_+-: 形式（例 :sparkles: :+1: :tada:）
+  if [ -z "$MSG" ] || ! printf '%s' "$MSG" | perl -CSD -ne 'exit 1 unless /^(\p{Extended_Pictographic}|\p{Regional_Indicator}{2}|:[a-zA-Z0-9_+-]+:)/'; then
+    printf "\e[31m[Error]: コミットメッセージの冒頭に絵文字を指定してください\e[0m\n"
+    printf "\e[33m例1: ✨ 新機能を追加\e[0m\n"
+    printf "\e[33m例2: :sparkles: 新機能を追加\e[0m\n"
+    exit 1
+  fi
+}
+
+check_message_format
