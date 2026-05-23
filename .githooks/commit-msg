@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 MSG=$(cat "$1")
 
 check_message_format() {
