@@ -26,3 +26,6 @@ $ git pull upstream master
 
 ## commit-messageの書き方
 - https://qiita.com/itosho/items/9565c6ad2ffc24c09364
+
+## PR template 
+.github > pull_request_template.md
