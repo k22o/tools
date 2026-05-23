@@ -29,3 +29,6 @@ $ git pull upstream master
 
 ## PR template 
 .github > pull_request_template.md
+
+## github actions 
+.github > workflows
