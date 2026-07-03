@@ -1,13 +1,9 @@
-# ドメイン駆動設計とその周辺事項
+# ドメイン駆動設計 (DDD)
 
-## Layered Architecture
+## ドメイン駆動設計とは
 
-データの処理体系を以下の4層に分割し、依存関係が上から下になるようにする。
-
-- UserInterface: 入出力。viewやcontroller、表示のためのHelperなど。
-- Application: ドメインを利用して実際の処理を駆動する。
-- Domain: ドメイン
-- InfraStructure: データベースへのアクセス、メッセージ送信など
+- ソフトウェアを「業務のルール（ドメイン）」を中心に設計する考え方
+- ドメインとはそのシステムが解決したい業務領域
 
 ## DDDにおける構成要素
 
@@ -23,26 +19,65 @@
   - repository: データに関する処理を行う
   - O/R mapper: データベースとobjectの相互マッピング
 
-### DIP(依存関係逆転の原則) とヘキサゴナルアーキテクチャ
+
+## DDD を実現するためのアーキテクチャ
+
+
+### Layered Architecture
+
+データの処理体系を以下の4層に分割し、依存関係が上から下になるようにする。
+
+- Presentation: 入出力。viewやcontroller、表示のためのHelperなど。
+- Application: ドメインを利用して実際の処理を駆動する。
+- Domain: ドメイン
+- InfraStructure: データベースへのアクセス、メッセージ送信など
+
+
+### Clean Architecture
 
 ベーシックなLayered ArchitectureにDIP (c.f. SOLID原則) を適用すれば、以下の依存関係になる。
 こんなイメージ -> https://terasolunaorg.github.io/guideline/current/ja/Overview/ApplicationLayering.html
 
-- InfraStructure
-- UserInterface
-- Application
-- Domain
-
 依存関係を逆転させる上で、IntraStructureのインターフェースが、Domainに設定されることになる。
 すなわち、  
-domain -> repository (in Infra)  
+domain -> Infrastructure  
 だったものが、  
-domain -> repository (in Domain) <- repositoryImpl (in Infra)  
+domain -> repository (in Domain) <- repositoryImpl (in Infrastructure)  
 となる。
 
-これによって、知識の実態であるドメインを中核として、
+## DDDのレポジトリ構成の例
 
-- UserInterface -> Application -> Domain
-- Repository -> Domain
+java/
+├── presentation/
+│   ├── controller/
+│   ├── request/
+│   ├── response/
+│   └── exception/
+│
+├── application/
+│   ├── usecase/
+│   ├── service/
+│   ├── dto/
+│   └── mapper/
+│
+├── domain/
+│   ├── model/
+│   │   ├── entity/
+│   │   ├── valueobject/
+│   │   ├── aggregate/
+│   │   └── event/
+│   ├── repository/ #interface
+│   ├── service/
+│   ├── factory/
+│   └── specification/
+│
+└── infrastructure/
+    ├── dao (entity)/
+    ├── repository/
+    ├── mapper/
 
-という構造が成り立つ、ヘキサゴナルアーキテクチャやクリーンアーキテクチャに類似した構成となる。
+※ データの詰め替え
+
+- infra層で dao <-> domain
+- Application層で domain <-> dto
+- Presentation層で dto -> Response, request -> dto
