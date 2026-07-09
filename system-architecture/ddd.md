@@ -8,7 +8,7 @@
 ## DDDにおける構成要素
 
 - Application:
-    -　application service: ドメインの処理を行う
+    - application service: ドメインの処理を行う
 - Domain: 「知識」を表す
   - Value Object: 変化することのない値、属性が同じなら同一
   - Entity: 変化しうる値、属性が同じでも一緒とは限らない (e.g. 人名)
@@ -47,6 +47,7 @@ domain -> repository (in Domain) <- repositoryImpl (in Infrastructure)
 
 ## DDDのレポジトリ構成の例
 
+‘‘‘
 java/
 ├── presentation/
 │   ├── controller/
@@ -75,6 +76,7 @@ java/
     ├── dao (entity)/
     ├── repository/
     ├── mapper/
+‘‘‘
 
 ※ データの詰め替え
 
