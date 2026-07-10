@@ -47,7 +47,7 @@ domain -> repository (in Domain) <- repositoryImpl (in Infrastructure)
 
 ## DDDのレポジトリ構成の例
 
-‘‘‘
+```
 java/
 ├── presentation/
 │   ├── controller/
@@ -76,7 +76,7 @@ java/
     ├── dao (entity)/
     ├── repository/
     ├── mapper/
-‘‘‘
+```
 
 ※ データの詰め替え
 
