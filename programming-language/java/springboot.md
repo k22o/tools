@@ -1,5 +1,38 @@
 # SpringBoot
 
+## Spring周りの用語
+用語 | リンク
+-- | --
+Spring MVC | https://camp.trainocate.co.jp/magazine/spring-mvc/
+REST | https://qiita.com/masato44gm/items/dffb8281536ad321fb08
+Spring AOP | https://qiita.com/daisuzz/items/de937816a5d7c9210469
+DI | https://qiita.com/kazuki43zoo/items/7a0e96573e930ac934ed
+autoconfiguration | https://qiita.com/kazuki43zoo/items/8645d9765edd11c6f1dd
+
+## Beanの生成方法
+- `@Configuration`の書かれたJava Config内で、`@Bean`
+- Beanを生成できるアノテーション
+    - `@component, @Repository, @Service, @Contoroller, @RestController` ...
+- Beanを定義するXMLファイル
+
+ref: https://qiita.com/kawakawaryuryu/items/c7d71fd56c497e283198
+
+## DIの方法
+- コンストラクタインジェクション (推奨)
+- フィールドインジェクション
+- セッターインジェクション
+
+ref: https://reasonable-code.com/spring-injection-method/
+
+## thymeleaf関係
+### インラインjavascriptへの変数の受け渡し
+
+```
+let x = [[${hoge}]];
+let y = /* [[${hoge}]] */ "huge";
+```
+`[[]]`は、XSS対策。yの書き方では、`${hoge}`を読み込めなかったときに、`huge`を返してくれる
+
 ## MVCとWebflux
 
 ### MVCとWebfluxの違い
