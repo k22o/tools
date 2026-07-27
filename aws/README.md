@@ -35,13 +35,13 @@
 
 - SNS (Simple Notification Service)
    - Pub/Sub型のマネージド通知配信サービス
-   - Publisherはメッセージを配信
+   - Publisherは複数のSubscriberにメッセージを一斉にPush
    - Subscriberは購読対象のメッセージを受信
 - SQS (Simple Queue Service)
    - 分散メッセージキュー
+   - MQのpull型
    - Producerは生成したメッセージをQueueに送信
-   - Consumerは自分でQueueに取得にいく
-   - AmazonMQ の後継的立ち位置？
+   - Consumerは自分でQueueからpullする (ポーリング)
 - App Mesh
    - Envoyベースで、サービスメッシュを提供する
 - API Gateway
