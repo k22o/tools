@@ -1,6 +1,7 @@
 # システムアーキテクチャ
 
-- [設計書について](./design.md)
+- [設計書](./design/)
+- [テスト](./test/)
 - [信頼性](./reliability.md)
 - [レビュー](./review.md)
 - [モジュール分割](./module.md)
