@@ -12,6 +12,17 @@
 - インスペクション
   - 事前に定められた観点で第三者が厳密に点検して、欠陥の指摘や認定を行う
 
+## コードレビューの観点
+
+- 基本はこちらに
+  - https://github.com/k22o/agent-plugins/blob/master/code-review/skills/review/SKILL.md
+- 実装が複雑になってしまう場合は、そもそもの機能要件を見直せるか
+- アーキテクチャに一貫性ははあるか
+- コーディングガイドラインに準拠しているか
+- セキュリティ観点で問題はないか
+- 今後の保守運用コストが増大化しないか
+
+
 ## 参考文献
 
 - https://blogs.techvan.co.jp/quality/review
