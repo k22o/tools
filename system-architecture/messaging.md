@@ -69,6 +69,8 @@ Event-Driven（イベント駆動アーキテクチャ）の設計思想。
 - 1つのメッセージを複数の受信者にブロードキャストできる
 - PublisherはSubscriberの存在や数を意識しなくてよいため、疎結合性がさらに高まる
 
+**Apache Pulsar**は、pub/sub（ログ保持型のトピック配信）とMQ（キュー型消費）の両方の性質を併せ持つハイブリッドな立ち位置。トピックごとにSubscriptionモードを選べ、`Exclusive`/`Failover`は1コンシューマーが専有、`Shared`/`Key_Shared`は複数コンシューマー間でメッセージを分散する（MQのポイントツーポイントに近い）。Kafkaと異なりブローカーとストレージ（BookKeeper）が分離されたアーキテクチャを持つ。
+
 ### MQ（メッセージキュー）
 
 送信側（Producer）がメッセージをキューに送り、受信側（Consumer）が自分のタイミングで取り出して処理する仕組み。RabbitMQ・Amazon SQSなどが代表例。Event-Driven（イベント駆動アーキテクチャ）の設計思想。
