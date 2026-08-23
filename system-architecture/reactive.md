@@ -1,6 +1,4 @@
-# ソフトウェアデザイン
-
-## Reactive Programming
+# Reactive Programming
 
 [wikipedia](https://en.wikipedia.org/wiki/Reactive_programming)より引用した、下記のコードが分かりやすい。<br>
 通常は、ある変数 `a (= b+c)` を更新するためには、明示的に `a` を更新する必要がある。reactive programming (RP) の場合は、aが自分を構成する変数 `b, c`の変化を検知して、いわばevent-driven的に値を更新する。
