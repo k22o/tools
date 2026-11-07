@@ -57,5 +57,7 @@ RDBの考え方とNoSQLの持つスケーラビリティなどの優位性を組
 
 ### 分散トランザクション
 
-TODO 
+- RDBでは、単一ノードで高性能を出す前提で、デフォルトの分離レベルはRead Committedだった
+- NewSQLでは、分散を前提に一貫性を保つため、SerializableやSnapshot Isolation (Repeatable Commitedに相当) がデフォルトになる
+   - 最近では、RDBでの互換性のため、デフォルト Read Committedにしているものもでてきた 
 
