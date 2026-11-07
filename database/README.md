@@ -1,43 +1,81 @@
 # Database
 
-## 構成
+データベースの基礎知識、種類ごとの特徴、および各データベースの実装サンプルをまとめる。
 
-- 知識
-  - [RDB-SQL](./rdb-sql/README.md): RDB-SQLの説明
-  - [NoSQL](./nosql.md)
-- サンプル
-  - [mySQL](./mysql/README.md): mySQLのサンプル
-  - [Qdrant](./qdrant/README.md): Qdrant (ベクトルデータベース) のサンプル
-  - [elasticsearch](./elasticsearch/README.md): elasticsearchのサンプル
+## 1. データベースの種類
 
-## Databaseの種類
+データの格納方法やデータの扱い方によって、データベースはいくつかの種類に分類できる。
 
-※ 現在では使われないものは除外している
+### 1.1 リレーショナルデータベース（RDB）
 
-- リレーショナルデータベース (RDB)
-  - データの一貫性とトランザクション機能を有する
-  - table結合等による、複雑なデータ操作ができる
-  - SQLを用いて操作する
--　NoSQL データベース
-- その他
-  - ベクトルデータベース
-  - 検索エンジン型データベース
+データをテーブル（表）形式で管理するデータベース。
+[RDB・SQL](./rdb-sql/README.md)
 
-## MigrationTool
+- SQLを用いてデータを操作する
+- テーブル間の結合（JOIN）など、複雑なデータ操作が可能
+- トランザクションによるデータの一貫性を保証する
+- データの整合性を制約（主キー・外部キーなど）によって管理できる
 
-スキーマ定義やテーブル更新のコード化、作業履歴の保存などを行うことができる。  
-Ruby on Railsなどではデフォルトで利用できるらしい。例は以下の通り。
+### 1.2 NoSQLデータベース
 
+RDBとは異なるデータモデルやデータ管理方式を採用したデータベースの総称。
+[NoSQL](./nosql/README.md)
+
+- スキーマの柔軟性が高いものが多い
+- 大量データや分散環境での処理に適したものがある
+- データモデルによって特徴や用途が異なる
+
+
+
+代表的な種類：
+- キーバリュー型
+- ドキュメント型
+- カラム指向型
+- グラフ型
+
+### 1.3 その他のデータベース・検索基盤
+
+特定の用途に特化したデータ管理・検索システム。
+
+| 種類 | 特徴 |
+|---|---|
+| ベクトルデータベース | ベクトル化されたデータを格納し、類似度検索を行う |
+| 検索エンジン型データベース | 全文検索や高速な検索・集計を得意とする |
+
+※ 検索エンジン型は、一般的なRDBやNoSQLとは異なる観点での分類であり、NoSQLに分類される製品もある。
+
+## 2. データベースの設計・運用
+
+### 2.1 Migration Tool
+
+データベースのスキーマ変更やテーブル更新をコードで管理するためのツール。
+
+主な機能：
+- テーブルやカラムなどのスキーマ変更をコード化
+- マイグレーションの実行履歴を管理
+- 環境間でデータベースの構造を統一
+- スキーマ変更の適用・ロールバック
+
+代表的なツール：
+- Flyway
 - sql-migrate
-- flyway
 
-## 備考
+※ Ruby on Railsなどのフレームワークでは、マイグレーション機能が標準で提供されている。
 
-sample-database: https://dev.mysql.com/doc/index-other.html : sakila
+## 3. 実装サンプル
 
-## 参考文献
+各データベース製品や検索基盤の利用方法をまとめる。
 
+- [MySQL](./mysql/README.md)：RDBの実装サンプル
+- [Qdrant](./qdrant/README.md)：ベクトルデータベースの実装サンプル
+- [Elasticsearch](./elasticsearch/README.md)：検索エンジンの実装サンプル
+
+## 4. 参考資料
+
+### サンプルデータ
+- [MySQL Sample Databases](https://dev.mysql.com/doc/index-other.html)：Sakilaなどのサンプルデータベース
+
+### 参考文献
 - https://products.sint.co.jp/siob/blog/nosql
 - https://tracpath.com/works/development/nosql_overview/
 - https://qiita.com/cocoa-maemae/items/d55c7b53f95425efdce8
-
